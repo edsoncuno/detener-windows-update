@@ -100,31 +100,17 @@ intervalos
 """
 
 import time
-import threading
-import keyboard
+import msvcrt
 
 def check(action):
-    exit_signal = threading.Event()
-
-    def check_for_exit():
-        while not exit_signal.is_set():
-            if keyboard.is_pressed("Esc"):
-                exit_signal.set()
-
-    exit_thread = threading.Thread(target=check_for_exit)
-    exit_thread.start()
-
-    while not exit_signal.is_set():
+    while True:
         action()
-        # si se usar mas de 1 segundo, 
-        # al momento de hacer el bucle, se detiene
-        # y hay que presionar entrer para que continue
-        # es mejor dejarlo 1 o memos
+        print("Presiona 'q' para para detener...")
         time.sleep(1)
-    
-    exit_thread.join()
-
-
+        if msvcrt.kbhit():
+            key = msvcrt.getch()
+            if key == b'q':
+                break
 """
 menu
 """
