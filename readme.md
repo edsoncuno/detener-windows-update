@@ -3,18 +3,13 @@
 ## Proposito
 
 Este programa sirve para detener la constante busqueda de actualizaciones de windows 10
-Para utilizarlo, hay que ejecutar el archiv "main.py" como administrador
+Para utilizarlo, hay que ejecutar el archivo "main.py" como administrador
 
 ## Dependencias
 
 Recordar actualizar pip
 ```sh
 python -m pip install --upgrade pip
-```
-
-Instalar las dependencias
-```sh
-pip install keyboard
 ```
 
 ## Generar .exe
