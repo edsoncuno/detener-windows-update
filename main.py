@@ -124,7 +124,6 @@ while True:
     print("4. Activar Windows Update")
     print("5. Activar Proteccion en Tiempo Real")
     print("6. Salir")
-    print("(Recodar que para salir de los bucles hay que presionar la tecla ESC)")
     opcion = input("Elige una opción: ")
     match opcion:
         case "1":
