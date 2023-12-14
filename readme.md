@@ -4,7 +4,8 @@
 ## Proposito
 
 Este programa sirve para detener la constante busqueda de actualizaciones de windows 10
-Para utilizarlo, hay que ejecutar el archivo "main.py" como administrador
+Para utilizarlo, hay que ejecutar el archivo "main.py" como administrador.
+O si se ha egenrador el .exe, hay que ejecutarlo como administrador.
 
 ## Dependencias
 
